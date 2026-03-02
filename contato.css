@@ -1,0 +1,133 @@
+.contatoSection {
+    padding: 100px 0;
+    background: #f9f9f9;
+}
+
+.contatoform {
+    width: 50%;
+    margin: auto;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.contatoform h1 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.contatoform p {
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.formContato {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+}
+
+.campo label {
+    margin-bottom: 8px;
+    font-weight: 500;
+}
+
+.campo input,
+.campo textarea {
+    padding: 12px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+    border-color: #C8A2E8;
+    outline: none;
+}
+
+.botaoPrincipal {
+    margin-top: 10px;
+    padding: 14px;
+    background: #C8A2E8;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.botaoPrincipal:hover {
+    background: #976eba;
+}
+
+@media (max-width: 1024px) {
+    .contatoform {
+        width: 70%;
+        padding: 40px;
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 13px;
+    }
+
+    .botaoPrincipal {
+        font-size: 15px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .contatoform {
+        width: 85%;
+        padding: 35px;
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    .botaoPrincipal {
+        font-size: 14px;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .contatoform {
+        width: 95%;
+        padding: 25px;
+    }
+
+    .contatoform h1 {
+        font-size: 24px;
+    }
+
+    .contatoform p {
+        font-size: 14px;
+        margin-bottom: 30px;
+    }
+
+    .campo input,
+    .campo textarea {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .botaoPrincipal {
+        font-size: 14px;
+        padding: 10px;
+    }
+}
